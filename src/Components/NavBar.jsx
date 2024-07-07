@@ -5,9 +5,9 @@ const NavBar = () => {
   return (
     <div>
       <Link to="/transactions">Index</Link>
-      <button>
+
         <Link to="/transactions/new">New Transactions</Link>
-        </button>
+        
     </div>
   )
 }

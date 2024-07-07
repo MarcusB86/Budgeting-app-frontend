@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from 'react';
 import Transaction from "./Transaction";
+import './Transaction.css'; 
 
 
 
@@ -23,10 +24,10 @@ const Transactions = () => {
     }, [])
 
     return (
-        <div>
+        <div className="transactions-container">
           <h1>Transactions</h1>
-          {transactions.map(transactions => {
-            return <Transaction key={transactions.id} transactions={transactions} />
+          {transactions.map(transaction => {
+            return <Transaction key={transaction.id} transaction={transaction} />
     })}
         </div>
       )
