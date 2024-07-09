@@ -12,7 +12,7 @@
   .transaction-link {
     color: #acb5be;
     text-decoration: none;
-    font-size: 24px; /* Increased font size */
+    font-size: 24px;
     transition: color 0.3s;
   }
   
