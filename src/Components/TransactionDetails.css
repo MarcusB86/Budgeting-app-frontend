@@ -1,0 +1,25 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+  }
+  
+  .transaction-details-container {
+    background-color: white; /* Optional: background color */
+    padding: 20px;           /* Optional: padding */
+    border-radius: 8px;      /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow */
+    text-align: center;
+  }
+  
+  .details p {
+    margin: 10px 0; /* Optional: spacing between details */
+  }
+  
+  .actions .action-link,
+  .actions .action-button {
+    margin: 10px;
+  }
+  

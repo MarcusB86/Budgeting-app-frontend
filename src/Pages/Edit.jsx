@@ -3,7 +3,7 @@ import TransactionEditForm from '../Components/TransactionEditForm'
 
 const Edit = () => {
   return (
-    <div>Edit
+    <div>
       <TransactionEditForm/>
     </div>
   )

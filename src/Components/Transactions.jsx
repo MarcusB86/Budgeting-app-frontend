@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from 'react';
 import Transaction from "./Transaction";
-import './Transaction.css'; 
+import './Transactions.css'; 
 
 
 
@@ -14,7 +14,7 @@ const Transactions = () => {
     useEffect(() => {
         fetch(`${API}/transactions`)
         .then((res) => {
-            return res.json()
+         return res.json()
         })
         .then(resJSON => {
             console.log(resJSON)
@@ -25,7 +25,7 @@ const Transactions = () => {
 
     return (
         <div className="transactions-container">
-          <h1>Transactions</h1>
+          {/* <h1>Transactions</h1> */}
           {transactions.map(transaction => {
             return <Transaction key={transaction.id} transaction={transaction} />
     })}

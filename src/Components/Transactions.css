@@ -1,0 +1,22 @@
+.transactions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .transaction {
+    margin: 90px 0;
+  }
+  
+  .transaction-link {
+    color: #acb5be;
+    text-decoration: none;
+    font-size: 24px; /* Increased font size */
+    transition: color 0.3s;
+  }
+  
+  .transaction-link:hover {
+    color: #005bb5;
+  }
+  

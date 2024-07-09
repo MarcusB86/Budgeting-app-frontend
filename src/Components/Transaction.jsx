@@ -3,10 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Transaction = ({ transaction }) => {
     return (
-      <div className="transaction-item">
-        <Link className="transaction-link" to={`/transactions/${transaction.id}`}>
-          {transaction.type}
-        </Link>
+      <div>
+        <Link to={`/transactions/${transaction.id}`}>{transaction.item_name}</Link>
       </div>
     );
   }
