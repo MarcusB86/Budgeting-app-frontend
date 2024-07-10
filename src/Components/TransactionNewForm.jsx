@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./TransactionNewForm.css"
 
-
 const API = import.meta.env.VITE_API_URL
 
 const TransactionNewForm = () => {
@@ -15,13 +14,13 @@ const TransactionNewForm = () => {
     }
 
     const addTransaction = () => {
-        fetch(`${API}/transactions`, {
-          method: "POST",
-          body: JSON.stringify(transaction),
-          headers: {
-            "Content-Type": "application/json"
-          }
-        })
+      fetch(`${API}/transactions`, {
+        method: "POST",
+        body: JSON.stringify(transaction),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      })
         .then(() => {
          navigate("/transactions")
         })
@@ -47,7 +46,7 @@ const TransactionNewForm = () => {
                 </div>
                 <div className='form-group'>
                 <label htmlFor="date"> Date</label>
-                <input id="date" type="text" value={transaction.date} required onChange={handleTextChange} />
+                <input id="date" type="date" value={transaction.date} required onChange={handleTextChange} />
                 </div>
                 <div className='form-group'>
                 <label htmlFor="from">From</label>

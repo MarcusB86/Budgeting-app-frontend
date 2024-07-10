@@ -12,7 +12,6 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
   }
   
   .navbar-left, .navbar-right {
@@ -25,7 +24,6 @@ body {
     text-decoration: none;
     margin: 0 10px;
     padding: 5px 10px;
-    transition: background 0.3s;
   }
   
   .nav-item:hover {

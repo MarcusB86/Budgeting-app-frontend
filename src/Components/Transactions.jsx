@@ -25,7 +25,7 @@ const Transactions = () => {
 
     return (
         <div className="transactions-container">
-          {/* <h1>Transactions</h1> */}
+          <h2>Transactions</h2>
           {transactions.map(transaction => {
             return <Transaction key={transaction.id} transaction={transaction} />
     })}

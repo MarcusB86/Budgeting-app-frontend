@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-// import './TransactionEditForm.css'
-
-
+import './TransactionEditForm.css'
 
 const API = import.meta.env.VITE_API_URL
 
@@ -12,19 +10,19 @@ const TransactionEditForm = () => {
     let {id} = useParams()
 
     const handleTextChange = (event) => {
-        setTransactionDetails({...workout, [event.target.id]: event.target.value})
+        setTransactionDetails({...transaction, [event.target.id]: event.target.value})
     }
 
     useEffect(() => {
         fetch(`${API}/transactions/${id}`)
         .then((res) => {
-          return res.json()
+        return res.json()
         })
         .then((resJSON) => {
-         setTransactionDetails(resJSON)
+        setTransactionDetails(resJSON)
         })
         .catch((error) => {
-         console.error(error)
+        console.error(error)
         })
     }, [id])
 
@@ -38,7 +36,7 @@ const TransactionEditForm = () => {
            }
         })
         .then(() => {
-         navigate("/transactions")
+        navigate("/transactions")
         })
         .catch((error) => console.error(error))
     }
