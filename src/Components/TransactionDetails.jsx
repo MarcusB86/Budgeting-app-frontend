@@ -40,7 +40,7 @@ const TransactionDetails = () => {
         <div className="transaction-details">
       <h1>Transaction Details</h1>
       <p>{transaction.item_name}</p>
-      <p>{transaction.amount}</p>
+      <p>${transaction.amount}</p>
       <p>{transaction.date}</p>
       <p>{transaction.from}</p>
       <p>{transaction.category}</p>
